@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id ="score" value=0 >
+<script>
+function s(){
+var score
+score=parseInt(document.getElementById("score").value);
+if (score< 60) {
+    document.getElementById("demo").innerHTML = "不及格";
+}
+if(score>=60){
+document.getElementById("demo").innerHTML = "及格";
+}
+}
+</script>
+<button onclick="s()">try</button>
+<br>
+<output id="demo"></output>
+</body>
+</html>
